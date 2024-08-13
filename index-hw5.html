@@ -43,11 +43,7 @@
         const classEl = "btn-secondary";
 
         function deleteClass(elem, classEl) {
-            if (elem.classList.contains(classEl)) {
-                elem.classList.remove(classEl);
-            } else {
-                elem.classList.add(classEl)
-            }
+            elem.classList.toggle(classEl);
         }
 
         deleteClass(btnEl, classEl);
