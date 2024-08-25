@@ -1,0 +1,50 @@
+[
+    {
+        "id":"",
+        "src":"./img/image__product/1.jpg",
+        "alt": "Куртка",
+        "title": "Куртка мужская синии цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "6000.00"
+    },
+    {
+        "id":"",
+        "src":"./img/image__product/2.png",
+        "alt": "Костюм женский",
+        "title": "Костюм женский черный цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "3000.00"
+    },
+    {
+        "id":"",
+        "src":"./img/image__product/3.png",
+        "alt": "Кофта мужская",
+        "title": "Кофта мужская синии цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "1000.00"
+    },
+    {
+        "id":"",
+        "src":"./img/image__product/4.png",
+        "alt": "Брюки мужские",
+        "title": "Брюки мужские бежевые цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "2000.00"
+    },
+    {
+        "id":"",
+        "src":"./img/image__product/5.png",
+        "alt": "Пиджак женский",
+        "title": "Пиджак женский голубой цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "1300.00"
+    },
+    {
+        "id":"",
+        "src":"./img/image__product/6.png",
+        "alt": "Рубашка женская",
+        "title": "Рубашка женская оливковый цвет",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": "1300.00"
+    }
+]

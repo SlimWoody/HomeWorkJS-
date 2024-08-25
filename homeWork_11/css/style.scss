@@ -109,7 +109,7 @@ label:hover {
     cursor: pointer;
 }
 
-.header__block-right{
+.header__block-right {
     display: flex;
     align-items: flex-end;
     gap: 41px;
@@ -304,54 +304,58 @@ label:hover {
 }
 
 .product-card {
-    &__image-box {
-        display: flex;
-        height: 420px;
+    &__image-wrapper {
+        position: relative;
         background: #f7e4e2;
+        display: flex;
         justify-content: center;
-        align-items: center;
-        transition: all 0.5s;
+        height: 420px;
     }
 
-    &__image-box:hover .blackout {
-        opacity: 0.86;
-        object-fit: cover;
+    &__image {
+        background: #f7e4e2;
     }
 
-    &__image-box:hover .product-card__add-to-cart-text {
+    &__blackout {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(58, 56, 56);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &__image-wrapper:hover &__blackout {
+        opacity: 0.6;
+    }
+
+    &__image-wrapper:hover &__add-to-cart-link {
+        display: flex;
         opacity: 1;
     }
 
-    &__img {
-        display: flex;
-        height: 100%;
-        /* display: block; */
-        position: relative;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__add-to-cart {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__add-to-cart-link {
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-    }
-
-    &__add-to-cart-text {
+        justify-content: center;
         font-weight: 400;
         font-size: 14px;
-        color: #fff;
-        display: flex;
-        padding: 1em;
-        border: solid 1px #fff;
         gap: 11px;
+        color: #fff;
+        border: #fff 1px solid;
+        width: 139px;
+        height: 44px;
         align-items: center;
+        text-align: center;
+        margin: auto;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
@@ -382,21 +386,20 @@ label:hover {
     }
 }
 
-.image-product {
+.product-card__image {
     display: block;
 }
 
-.blackout {
-    position: absolute;
-    height: 100%;
+.image-filter {
     width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgb(58, 56, 56);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0.6;
 }
 
 .footer {
