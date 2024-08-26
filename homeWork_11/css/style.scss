@@ -86,6 +86,10 @@ summary::-webkit-details-marker {
         gap: 33px;
     }
 
+    %__menu-link-last{
+        position: relative;
+    }
+
     &__menu-link:hover path {
         fill: $colorAccentSite;
     }
@@ -93,6 +97,20 @@ summary::-webkit-details-marker {
     // &__burger-menu-link:hover .burger-menu-nav {
     // visibility: visible;
     // }
+    &__menu-counter{
+        border-radius: 100%;
+        width: 19px;
+        height: 19px;
+        background-color: #F16D7F;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 19px;
+        right: auto;
+        left: auto;
+        bottom: auto;
+    }
 }
 
 #burger {
@@ -400,6 +418,97 @@ label:hover {
     bottom: 0;
     background: rgb(58, 56, 56);
     opacity: 0.6;
+}
+
+.cart {
+    margin-top: 96px;
+    margin-bottom: 66px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 30px;
+        color: #222;
+        margin-bottom: 64px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &__product-card {
+        display: flex;
+        width: 652px;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        background-color: #ffffff;
+    }
+
+    &__image-wrapper {
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        height: 306px;
+        width: 262px;
+        background-color: #f7e4e2;
+    }
+
+    &__product-img {
+        min-height: 100%;
+    }
+
+    &__info {
+        padding: 22px 0px 62px 31px;
+    }
+
+    &__name {
+        font-style: normal;
+        line-height: 29px;
+        width: 194px;
+        font-weight: 400;
+        font-size: 24px;
+        color: #222;
+    }
+
+    &__info p {
+        font-weight: 400;
+        font-size: 22px;
+        color: #575757;
+        margin-bottom: 6px;
+    }
+
+    &__price {
+        margin-top: 42px;
+    }
+
+    &__closure-element {
+        padding: 28px 0 22px 125px;
+    }
+
+    &__price span {
+        color: #ef5b70;
+    }
+
+    &__quantity {
+        font-weight: 400;
+        font-size: 22px;
+        color: #575757;
+        display: flex;
+    }
+
+    &__quantity input {
+        margin-left: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #575757;
+        width: 43px;
+        height: 24px;
+        border: 1px solid #eaeaea;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+    }
 }
 
 .footer {
